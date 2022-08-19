@@ -2,7 +2,6 @@ from flask import Flask,request,render_template,send_file
 from pytube import YouTube
 from io import BytesIO
 
-
 app = Flask(__name__)
 
 @app.route("/")
