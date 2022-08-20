@@ -2,6 +2,7 @@ from flask import Flask,request,render_template,send_file
 from pytube import YouTube
 from io import BytesIO
 
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -11,13 +12,20 @@ def home():
 @app.route("/download",methods=['GET','POST'])
 def download():
     if(request.method=='POST'):
-        buffer = BytesIO()
-        link = request.form.get('url')
-        yt = YouTube(link)
-        ys = yt.streams.get_highest_resolution()
-        ys.stream_to_buffer(buffer)
-        buffer.seek(0)
-        return send_file(buffer, as_attachment=True, download_name="Video - YT2Video.mp4", mimetype="video/mp4")
+        link = request.form['url']
+        try:
+            if link == '':
+                 pass 
+            else:
+                buffer = BytesIO()
+                #link = request.form.get('url')
+                yt = YouTube(link)
+                ys = yt.streams.get_highest_resolution()
+                ys.stream_to_buffer(buffer)
+                buffer.seek(0)
+                return send_file(buffer, as_attachment=True, download_name="Video", mimetype="video/mp4")
+        except:
+            pass  
     return render_template('index2.html')
 
 
