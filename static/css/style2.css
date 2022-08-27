@@ -73,3 +73,22 @@ html,body{
         background-color: red;   
         border: none;  
 }
+
+#footer {
+    position:fixed;
+    left:0rem;
+    bottom:0rem;
+    height:4rem;
+    width:100%;
+    background:red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+ }
+
+#fcontent{
+    padding-top: 1rem;
+ }
+
+ h1 a{
+    color: white;
+}
