@@ -23,7 +23,7 @@ def download():
                 ys = yt.streams.get_highest_resolution()
                 ys.stream_to_buffer(buffer)
                 buffer.seek(0)
-                return send_file(buffer, as_attachment=True, download_name="Video", mimetype="video/mp4")
+                return send_file(buffer, as_attachment=True, download_name="Video.mp4", mimetype="video/mp4")
         except:
             pass  
     return render_template('index2.html')
