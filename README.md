@@ -6,7 +6,7 @@ A simple youtube video downloader made with python flask.
 **Backend:** Python Flask
 
 ### Requirements:
-* Make sure you have python 3.6 on your system.
+* Make sure you have python 3.6 or above on your system.
 * Install all the pacakges mentioned in requirements.txt file and this project will run just fine.
 
 ### Screenshot:
