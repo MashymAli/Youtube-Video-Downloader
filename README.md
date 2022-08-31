@@ -13,4 +13,4 @@ A simple youtube video downloader made with python flask.
 Link: https://yt-downloader.mashymali.repl.co/
 
 ### Screenshot:
-![website](https://user-images.githubusercontent.com/87118384/185670482-9670376f-d23a-482f-b941-20857b307839.PNG)
+![tempsnip](https://user-images.githubusercontent.com/87118384/187648793-419a0b49-9b20-440f-a434-65d300ba5441.png)
