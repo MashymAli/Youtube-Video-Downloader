@@ -12,8 +12,9 @@ body{
 }
 
 html,body{
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
  }
 
 .topnav {
@@ -37,15 +38,49 @@ html,body{
     height: 9rem;
     /*background-color: red;*/
     position:absolute;
-    top:50%;
-    left:33%;
-    margin-top:-50px; /* this is half the height of your div*/  
-    margin-left:-100px; /*this is half of width of your div*/
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 14rem;
+}
+
+.error-container{
+    width: 40rem;
+    height: 9rem;
+    /*background-color: red;*/
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 14rem;
 }
 
 .container h1{
     text-align: center;
     font-size: 3rem;
+}
+
+.error-container h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.error-container button{
+    width: 9rem;
+    height: 2.8rem;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.error-container a{
+    text-decoration: none;
 }
 
 .url{
@@ -61,7 +96,6 @@ html,body{
     font-size: 1.6rem;
     outline: none;
     text-align: center;
-    
 }
 
 .url button{
@@ -92,3 +126,4 @@ html,body{
  h1 a{
     color: white;
 }
+
