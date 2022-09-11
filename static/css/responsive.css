@@ -1,0 +1,75 @@
+@media (max-width: 640px) {
+
+  .container{
+    width: 35rem;
+  }
+
+  .error-container{
+    width: 20rem;
+  }
+
+  .container h1{
+    font-size: 2rem;
+  }
+
+  .url input{
+    height: 2.7rem;
+    width: 20rem;
+    font-size: 1.6rem;
+    outline: none;
+    text-align: center;
+}
+
+  .url button{
+    font-size: 1.6rem;
+    height: 2.9rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 557px) {
+
+    .container{
+      width: 30rem;
+    }
+  
+    
+  }
+
+  @media (max-width: 483px) {
+
+    .container{
+      width: 25rem;
+    }
+
+    .url input{
+        width: 16rem;
+    }
+    
+      .url button{
+        font-size: 1.3rem;
+        height: 2.9rem;
+        width: 6.6rem;
+      }
+  }
+
+  @media (max-width: 400px) {
+
+    .container{
+        width: 20rem;
+      }
+  
+      .container h1{
+          font-size: 1.5rem;
+        }
+  
+      .url input{
+          width: 13rem;
+      }
+      
+        .url button{
+          font-size: 1.3rem;
+          height: 2.9rem;
+          width: 6.2rem;
+        }
+  }
