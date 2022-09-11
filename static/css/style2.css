@@ -12,8 +12,8 @@ body{
 }
 
 html,body{
-    /*overflow-x: hidden;
-    overflow-y: hidden;*/
+    /*overflow-x: hidden;*/
+    overflow-y: hidden;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
  }
 
@@ -96,6 +96,8 @@ html,body{
     font-size: 1.6rem;
     outline: none;
     text-align: center;
+    color: black;
+    background-color:white;
 }
 
 .url button{
