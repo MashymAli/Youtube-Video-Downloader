@@ -9,13 +9,17 @@ app = Flask(__name__)
 def home():
     return render_template('index2.html')
 
+@app.route('/index2')
+def goback():
+    return render_template('index2.html')
+
 @app.route("/download",methods=['GET','POST'])
 def download():
     if(request.method=='POST'):
         link = request.form['url']
         try:
             if link == '':
-                 pass 
+                 return render_template('error.html') 
             else:
                 buffer = BytesIO()
                 #link = request.form.get('url')
@@ -23,9 +27,9 @@ def download():
                 ys = yt.streams.get_highest_resolution()
                 ys.stream_to_buffer(buffer)
                 buffer.seek(0)
-                return send_file(buffer, as_attachment=True, download_name="Video.mp4", mimetype="video/mp4")
+                return send_file(buffer, as_attachment=True, download_name="video.mp4", mimetype="video/mp4")
         except:
-            pass  
+            return render_template('error.html')  
     return render_template('index2.html')
 
 
