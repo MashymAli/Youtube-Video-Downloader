@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     return render_template('index2.html')
 
-@app.route('/index2')
+@app.route('/home')
 def goback():
     return render_template('index2.html')
 
