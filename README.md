@@ -7,7 +7,7 @@ A youtube video downloader web application made with python flask.
 
 ### Requirements:
 * Make sure you have python 3.8 or above installed on your system.
-* Install all the pacakges mentioned in requirements.txt file and this project will run just fine.
+* Install all the packages mentioned in requirements.txt file and this project will run just fine.
 
 ### Deployed Link:
 Link: https://yt-downloader.mashymali.repl.co/
