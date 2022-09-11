@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style2.css') }}">
+
+    <title>YT Downloader</title>
+    <link rel="icon" href="{{ url_for('static',filename='images/youtube-downloader-icon-15.jpg') }}">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <h2>YT Downloader</h2>
+    </div>
+
+
+    {% block body %} {% endblock %}
+
+
+    <footer>
+        <div id="footer">
+            <h1 id="fcontent"> Created by: <a href="https://github.com/MashymAli" target="_blank">Mashym Ali</a></h1>
+        </div>
+          
+    </footer>
+
+
+</body>
+</html>
